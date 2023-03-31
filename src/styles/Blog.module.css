@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+.blogItem {
+  margin: 10px;
+}
+.blogItem h1 {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.blogItemP {
+  max-width: 45vw;
+}
