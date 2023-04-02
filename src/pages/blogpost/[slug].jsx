@@ -16,11 +16,15 @@ const Slug = (props) => {
   //     });
   // }, [router.isReady, router.query.slug]);
 
+  function createMarkup() {
+    return { __html: blog.content };
+  }
+
   return (
     <div className={styles.main}>
       <h1>{blog && blog.title}</h1>
       <hr />
-      <div className={styles.container}>{blog && blog.content}</div>
+      {blog && <div dangerouslySetInnerHTML={createMarkup()} className={styles.container}></div>}
     </div>
   );
 };
