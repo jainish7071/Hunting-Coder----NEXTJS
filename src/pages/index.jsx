@@ -1,9 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
+// import Image from "next/image";
 import Script from "next/script";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import src from "../../public/home.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,7 +36,8 @@ export default function Home() {
         <div className={styles.title}>
           <h1>Hunting Code</h1>
         </div>
-        <Image className="myImg" src={src} alt={"Image Not Found"} width="237" height="145" />
+        {/* <Image className="myImg" src={src} alt={"Image Not Found"} width="237" height="145" /> */}
+        <img src="./home.jpg" alt="Image Not Found" width="237" height="145" />
         <div className={styles.description}>A Blog for hunting coders by a hunting coder</div>
         <div>
           <h2>Latest Blogs</h2>
