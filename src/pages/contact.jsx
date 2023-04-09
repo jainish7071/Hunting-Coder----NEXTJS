@@ -16,7 +16,6 @@ const Contact = () => {
     })
       .then((a) => a.json())
       .then((e) => {
-        console.log(e);
         alert("Thanks for contacting Us.");
         setName("");
         setEmail("");
@@ -68,7 +67,7 @@ const Contact = () => {
           <input required type="phone" onChange={handleChange} value={phone} className={styles.input} id="phone" name="phone" />
         </div>
         <div className={styles["mb-3"]}>
-          <label className={styles.formLabel} for="floatingTextarea">
+          <label className={styles.formLabel} htmlFor="floatingTextarea">
             Concern
           </label>
           <textarea required onChange={handleChange} value={desc} className={styles.input} id="desc" name="desc" />
